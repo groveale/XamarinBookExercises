@@ -22,7 +22,7 @@ namespace Hello
         {
             Chapter10.Toolkit.Toolkit.Init();
 
-            // The root page of your application
+            // gThe root page of your application
             MainPage = new BounchingText();
         }
 
