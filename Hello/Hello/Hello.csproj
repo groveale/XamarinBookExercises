@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E71E9E7-A9A2-40B7-AB6D-9426844B7AC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hello</RootNamespace>
+    <AssemblyName>Hello</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Chapter10\AppConstants.cs" />
+    <Compile Include="Chapter10\CustomExtensionsDemo.xaml.cs">
+      <DependentUpon>CustomExtensionsDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\DynamicVsStaticPage.xaml.cs">
+      <DependentUpon>DynamicVsStaticPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\ResourceSharingPage.xaml.cs">
+      <DependentUpon>ResourceSharingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\SharedStatisticsPage.xaml.cs">
+      <DependentUpon>SharedStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\SystemStatisticsPage.xaml.cs">
+      <DependentUpon>SystemStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\Toolkit\HslColorExtension.cs" />
+    <Compile Include="Chapter10\Toolkit\Toolkit.cs" />
+    <Compile Include="Chapter11\PropertySettingsPage.cs" />
+    <Compile Include="Chapter12Syles\BasicStyle.xaml.cs">
+      <DependentUpon>BasicStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter12Syles\BasicStyleCodePage.cs" />
+    <Compile Include="Chapter12Syles\BasicStylePage.xaml.cs">
+      <DependentUpon>BasicStylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter12Syles\DeviceStylesList.xaml.cs">
+      <DependentUpon>DeviceStylesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter12Syles\DynamicStyles.xaml.cs">
+      <DependentUpon>DynamicStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13BitMaps\ImageBrowserPAge.xaml.cs">
+      <DependentUpon>ImageBrowserPAge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13BitMaps\ImageResource.cs" />
+    <Compile Include="Chapter13BitMaps\ResourceBitMapCode.cs" />
+    <Compile Include="Chapter13BitMaps\StackedBitMapPage.xaml.cs">
+      <DependentUpon>StackedBitMapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13BitMaps\WebBitMapPage.xaml.cs">
+      <DependentUpon>WebBitMapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13BitMaps\WebBitMapCode.cs" />
+    <Compile Include="Chapter14AbsolouteLayouts\AbsoluteDemoPage.cs" />
+    <Compile Include="Chapter14AbsolouteLayouts\BounchingText.xaml.cs">
+      <DependentUpon>BounchingText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14AbsolouteLayouts\ChessBoard.cs" />
+    <Compile Include="Chapter14AbsolouteLayouts\ChessBoardProportaionalPage.cs" />
+    <Compile Include="Chapter14AbsolouteLayouts\DynamicChessBoard.cs" />
+    <Compile Include="Pages\BlackCatPage.cs" />
+    <Compile Include="Pages\ButtonLambdasPage.cs" />
+    <Compile Include="Pages\ButtonLoggerPage.cs" />
+    <Compile Include="Pages\ColorBlocksPage.cs" />
+    <Compile Include="Pages\FramedTextPage.cs" />
+    <Compile Include="XAML\ClockPage.xaml.cs">
+      <DependentUpon>ClockPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\ColourView.xaml.cs">
+      <DependentUpon>ColourView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\ColourViewPage.xaml.cs">
+      <DependentUpon>ColourViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\KeypadPage.xaml.cs">
+      <DependentUpon>KeypadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\MonkeyTap.xaml.cs">
+      <DependentUpon>MonkeyTap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\ParameteredConstructorDemo.xaml.cs">
+      <DependentUpon>ParameteredConstructorDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\PlatformSpecific.xaml.cs">
+      <DependentUpon>PlatformSpecific.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\ScaryColorList.xaml.cs">
+      <DependentUpon>ScaryColorList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML\StackXAML.xaml.cs">
+      <DependentUpon>StackXAML.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\ReflectedColorPage.cs" />
+    <Compile Include="Pages\SizedBoxViewPage.cs" />
+    <Compile Include="Pages\TwoButtonsPage.cs" />
+    <Compile Include="Pages\VerticleOptionsDemoPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Texts\Lorem.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\StackXAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\ScaryColorList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\ParameteredConstructorDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\ClockPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\PlatformSpecific.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\ColourViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\ColourView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\KeypadPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XAML\MonkeyTap.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter10\SharedStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter10\SystemStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter10\ResourceSharingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter10\DynamicVsStaticPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter10\CustomExtensionsDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter12Syles\BasicStyle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter12Syles\BasicStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter12Syles\DynamicStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter12Syles\DeviceStylesList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter13BitMaps\WebBitMapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter13BitMaps\Images\join.png" />
+    <Content Include="Chapter13BitMaps\Images\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter13BitMaps\StackedBitMapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter13BitMaps\ImageBrowserPAge.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter14AbsolouteLayouts\BounchingText.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
