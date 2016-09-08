@@ -6,6 +6,7 @@ using System.Text;
 using Hello.Chapter10;
 using Hello.Chapter12Syles;
 using Hello.Chapter13BitMaps;
+using Hello.Chapter15;
 
 using Xamarin.Forms;
 using Hello.Chapter14AbsolouteLayouts;
@@ -20,10 +21,10 @@ namespace Hello
 
         public App()
         {
-            Chapter10.Toolkit.Toolkit.Init();
+            //Chapter10.Toolkit.Toolkit.Init();
 
             // gThe root page of your application
-            MainPage = new BounchingText();
+            MainPage = new KeyBoardPage();
         }
 
         protected override void OnStart()
