@@ -87,8 +87,20 @@
     <Compile Include="Chapter14AbsolouteLayouts\ChessBoard.cs" />
     <Compile Include="Chapter14AbsolouteLayouts\ChessBoardProportaionalPage.cs" />
     <Compile Include="Chapter14AbsolouteLayouts\DynamicChessBoard.cs" />
+    <Compile Include="Chapter15\DaysBetweenDates.xaml.cs">
+      <DependentUpon>DaysBetweenDates.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Chapter15\KeyBoardPage.xaml.cs">
       <DependentUpon>KeyBoardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter15\QuadraticEquations.xaml.cs">
+      <DependentUpon>QuadraticEquations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter15\SearchBarDemoPage.xaml.cs">
+      <DependentUpon>SearchBarDemoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter15\SetTimerPage.xaml.cs">
+      <DependentUpon>SetTimerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Chapter15\SwitchDemoPage.xaml.cs">
       <DependentUpon>SwitchDemoPage.xaml</DependentUpon>
@@ -267,6 +279,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Chapter15\MobyDick.txt" />
     <EmbeddedResource Include="Chapter13BitMaps\Images\join.png" />
     <Content Include="Chapter13BitMaps\Images\login.png" />
   </ItemGroup>
@@ -296,6 +309,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Chapter15\KeyBoardPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter15\QuadraticEquations.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter15\SearchBarDemoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter15\DaysBetweenDates.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter15\SetTimerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

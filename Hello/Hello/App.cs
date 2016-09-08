@@ -24,7 +24,7 @@ namespace Hello
             //Chapter10.Toolkit.Toolkit.Init();
 
             // gThe root page of your application
-            MainPage = new KeyBoardPage();
+            MainPage = new SetTimerPage();
         }
 
         protected override void OnStart()
