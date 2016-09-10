@@ -10,6 +10,7 @@ using Hello.Chapter15;
 
 using Xamarin.Forms;
 using Hello.Chapter14AbsolouteLayouts;
+using Hello.Chapter16DataBinding;
 
 namespace Hello
 {
@@ -24,7 +25,7 @@ namespace Hello
             //Chapter10.Toolkit.Toolkit.Init();
 
             // gThe root page of your application
-            MainPage = new SetTimerPage();
+            MainPage = new OpacityBindingXAML();
         }
 
         protected override void OnStart()
