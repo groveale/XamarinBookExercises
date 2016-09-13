@@ -110,6 +110,26 @@
       <DependentUpon>OpacityBindingXAML.xaml</DependentUpon>
     </Compile>
     <Compile Include="Chapter16DataBinding\BindingSourceCodePage.cs" />
+    <Compile Include="Chapter17Grid\DoubleToIntConvertor.cs" />
+    <Compile Include="Chapter17Grid\GridCellDeviders.xaml.cs">
+      <DependentUpon>GridCellDeviders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter17Grid\GridRgbSlidersPage.xaml.cs">
+      <DependentUpon>GridRgbSlidersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter17Grid\GrodBarChart.xaml.cs">
+      <DependentUpon>GrodBarChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter17Grid\KeyPadGrid.xaml.cs">
+      <DependentUpon>KeyPadGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter17Grid\SimpleGrid.xaml.cs">
+      <DependentUpon>SimpleGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter17Grid\SimpleGridCode.cs" />
+    <Compile Include="Chapter17Grid\SpacingButtons.xaml.cs">
+      <DependentUpon>SpacingButtons.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BlackCatPage.cs" />
     <Compile Include="Pages\ButtonLambdasPage.cs" />
     <Compile Include="Pages\ButtonLoggerPage.cs" />
@@ -344,6 +364,42 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Chapter16DataBinding\OpacityBindingXAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter17Grid\SimpleGrid.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter17Grid\GrodBarChart.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter17Grid\SpacingButtons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter17Grid\GridCellDeviders.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter17Grid\KeyPadGrid.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter17Grid\GridRgbSlidersPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

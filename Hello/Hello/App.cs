@@ -11,6 +11,7 @@ using Hello.Chapter15;
 using Xamarin.Forms;
 using Hello.Chapter14AbsolouteLayouts;
 using Hello.Chapter16DataBinding;
+using Hello.Chapter17Grid;
 
 namespace Hello
 {
@@ -22,10 +23,10 @@ namespace Hello
 
         public App()
         {
-            //Chapter10.Toolkit.Toolkit.Init();
+            //Chapter17Grid.DoubleToIntConverter.Init();
 
             // gThe root page of your application
-            MainPage = new OpacityBindingXAML();
+            MainPage = new GridRgbSlidersPage();
         }
 
         protected override void OnStart()
